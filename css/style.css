@@ -34,24 +34,34 @@ ul li {
 }
 
 /*  header section design  */
+.header {
+    z-index: 2;
+    position: relative;
+}
 .menu {
     align-items: center;
 }
 
 .header-section {
+    position: absolute;
     display: flex;
     flex-flow: row;
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 0px;
 }
 
 .header-section .logo {
-    width: 40%;
+    width: 50%;
+}
+.header-section .logo img {
+    width: 20%;
+    padding-left: 50px;
 }
 
 .header-section .menu {
-    width: 60%;
+    width: 50%;
 }
 
 .menu-ul {
@@ -65,4 +75,32 @@ ul li {
     width: 100%;
     display: flex;
     font-size: 1.5rem;
+}
+
+.menu-ul .list-item a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+/* banner section  */
+.banner {
+    display: flex;
+    background: var(--bg-color);
+}
+.banner-left {
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+}
+
+.banner-right {
+    width: 70%;
+    position: relative;
+    top: -90px;
+    left: 527px;
+    height: 100vh;
+    background-image: url(../img/Design.png);
+    background-repeat: no-repeat;
 }
