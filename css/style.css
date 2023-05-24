@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Poppins:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Montserrat:wght@200;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #303030;
+    --secondary-color: #ffffff;
+    --main-text-color: #ffc200;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    background: var(--bg-color);
+    color: var(--text-color);
+    background: black;
+}
+
+ul li {
+    list-style: none;
+}
+
+/*  header section design  */
+.menu {
+    align-items: center;
+}
+
+.header-section {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-section .logo {
+    width: 40%;
+}
+
+.header-section .menu {
+    width: 60%;
+}
+
+.menu-ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0%;
+}
+
+.menu-ul .list-item {
+    width: 100%;
+    display: flex;
+    font-size: 1.5rem;
+}
