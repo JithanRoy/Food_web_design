@@ -194,7 +194,8 @@ ul li {
 /* taste section  */
 .tasteshowcase {
     display: flex;
-    height: 500px;
+    flex-direction: row;
+    height: 550px;
     background-image: url(../img/tastesection.png);
     background-repeat: no repeat;
     background-size: cover;
@@ -216,17 +217,105 @@ ul li {
 .taste img {
     position: relative;
     border-radius: 50%;
-    width: 20%;
+    width: 25%;
     top: 252px;
     left: 190px;
 }
 
 .taste-text {
+    width: 50%;
     position: absolute;
     top: 200px;
+    left: 930px;
+    right: 20px;
 }
 
 .taste-text h1 {
     font-size: 100px;
     color: var(--secondary-color);
+    font-family: 'grand hotel', sans;
+}
+.taste-text p {
+    color: var(--secondary-color);
+    font-size: 20px;
+    text-align: left;
+    margin: 15px 0;
+    letter-spacing: .1rem;
+}
+
+/* statistics section  */
+
+.statictics {
+    background: var(--bg-color);
+    background-image: url(../img/Design2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px;
+    width: 100%;
+}
+
+.stat-div {
+    margin: 90px auto;
+}
+
+.statictics h1 {
+    font-family: 'grand hotel' sans;
+    font-size: 100px;
+    color: var(--secondary-color);
+    font-family: 'grand hotel', sans;
+    text-align: center;
+}
+
+.statictics {
+    position: absolute;
+    font-size: 2rem;
+    color: var(--secondary-color);
+    z-index: 1;
+}
+
+.stat-demo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 45px;
+    margin-top: 30px;
+}
+
+.menu-list p:nth-child(1) {
+    color: var(--main-text-color);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.menu-list p:nth-child(2) {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.stat-demo .menu-list {
+    border: .3rem solid var(--secondary-color);
+    border-radius: 50%;
+    padding: 30px;
+}
+
+.stat-demo .menu-list:nth-child(2),
+.stat-demo .menu-list:nth-child(3) {
+    padding: 30px 50px;
+}
+
+/* grill section  */
+.grill {
+}
+.grill-section {
+    background-image: url(../img/grill.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1222px;
+    width: 120%;
+    position: relative;
+    top: -39px;
+    z-index: -1;
+    left: -199px;
+    right: -70px;
 }
