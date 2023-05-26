@@ -306,16 +306,36 @@ ul li {
 
 /* grill section  */
 .grill {
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 .grill-section {
+    display: flex;
     background-image: url(../img/grill.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 1222px;
     width: 120%;
-    position: relative;
+    position: absolute;
     top: -39px;
     z-index: -1;
     left: -199px;
     right: -70px;
+}
+.left-part {
+    width: 50%;
+    position: relative;
+    top: 888px;
+    left: 231px;
+}
+
+.right-part {
+    width: 50%;
+    position: relative;
+}
+.right-part h1 {
+    color: #ffffff;
 }
